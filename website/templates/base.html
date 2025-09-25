@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename="styles.css")}}" />
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Placeholder</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"></a>
+        <!--Search bar goes here-->
+        <a class="cta" href="/login"><button>Log in</button></a>
+        <a class="cta" href="/signup"><button>Sign up</button></a>
+    </header>
+{% block body %}
+{% endblock %}
+</body>
+</html>
